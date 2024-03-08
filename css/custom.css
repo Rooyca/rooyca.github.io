@@ -1,1 +1,6 @@
 /* You can customize theme styles here */
+
+.textcenter {
+	text-align: justify; 
+	text-justify: inter-word;
+}
