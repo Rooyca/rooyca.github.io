@@ -1,3 +1,3 @@
-# rooycas Portfolio
+# rooyca's Portfolio
 
-![rooycas portfolio](preview.png)
+![rooyca's portfolio](preview.png)
