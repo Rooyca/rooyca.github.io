@@ -1,5 +1,0 @@
-Contact: mailto:work.7gxf7@slmail.me
-Expires: 2024-12-31T05:00:00.000Z
-Encryption: https://pgp.rooyca.workers.dev/?fp=0CCBAE3240C1522155278DE4CB666DEC17F3A6D5
-Preferred-Languages: en, es
-Canonical: https://rooyca.github.io/.well-known/security.txt
