@@ -1,4 +1,16 @@
+# Turn on the rewrite engine
 RewriteEngine On
+DirectoryIndex index.html
+
+# Ensure that the ErrorDocument directive applies to all subdirectories
+ErrorDocument 404 /404.html
+
+# Catch-all rule to rewrite requests to non-existent files to 404.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /404.html [L]
+
+# Remove .html from URL
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^/]+)/$ $1.html
 RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
@@ -6,5 +18,3 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !(\[a-zA-Z0-9]{1,5}|/)$
 RewriteRule (.*)$ /$1/ [R=301,L]
-
-ErrorDocument 404 /404.html
